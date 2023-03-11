@@ -1,0 +1,84 @@
+/*=================================
+    GALLERY SECTION ANIMATION
+  ================================*/
+p {
+    font-weight: 300;
+    line-height: 30px;
+    padding-bottom: 15px;
+}
+
+.photo {
+    position: relative;
+    line-height: 0;
+    margin-bottom: 2em;
+    overflow: hidden;
+    border-radius: 8%;
+    padding: 1px;
+    border: 2px solid black;
+    background-color: #EDF1D6;
+    box-shadow: 0px 10px 20px #40513B;
+
+
+}
+
+.photo-container {
+    text-align: center;
+    width: 300px;
+    height: 169px;
+    margin: 15px auto;
+}
+
+.photo-container img {
+    max-width: 100%;
+    width: 300px;
+    height: 169px;
+    border: 2px solid black;
+}
+
+.photo-overly {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   padding-left: 20px;
+   padding-right: 20px;
+   justify-content: center; /* FOR CENTERING TEXT INSIDE THE PHOTO */
+   align-items: center;
+   background: rgba(0, 0, 0, .5);
+}
+
+.white-head {
+    margin-top: 5%;
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+
+/*============================
+    PHOTO OVERLAY TRANSITIONS
+ =============================*/
+
+.photo-overly {
+    opacity: 0;
+    transition: opacity .1s;
+    border: 10px;
+    cursor: pointer;
+}
+
+.photo-container p {
+    width: 100%;
+    height: 100%;
+}
+
+.photo-overly:hover {
+    opacity: 1;
+}
+
+.photo img {
+    transition: transform .5s;
+    transform-origin:  50% 50%;
+}
+
+.photo:hover img {
+    transform: scale(1.1)
+}
