@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+}
+
+/*==============
+    Top Header
+================*/
+.container {
+    background: rgb(171, 3, 3);
+    margin: 3% auto;
+    width: 100%;
+}
+
+.container img {
+    display: block;
+    margin: 0 auto;
+
+    filter: grayscale(80%) blur(4px);
+    
+
+    border-radius: 10%;
+}
+
+.container h1 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 45px;
+}
+
+/*=============
+    Footer
+===============*/
+
+footer{
+    margin-top:35%;
+    width: 100%;
+}
+footer p {
+    text-align: center;
+    font-weight: 900;
+}
+
+/*==========
+    Table
+===========*/
+
+.table table {
+    border: 5px dashed navy;
+}
+
+.table td {
+    padding: 25px;
+}
+
+th {
+    color: white;
+     background-color: black;
+}
+
+/*===========
+    Nav Bar
+============*/
+.navbar {
+    position: fixed;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    background: black;
+    z-index: 100;
+}
+nav :nth-child(-n+3):hover{
+    background: rgb(171, 3, 3);
+    color: black;
+}
+.inner-navbar {
+    margin-top: 10px;
+}
+.inner-navbar a {
+    
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: azure;
+}
+
+/*==========
+    Column
+===========*/
+.row {
+    margin-top: 20px;
+    text-align: center;
+    color: whitesmoke;
+    height: 100%;
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.column {
+    float: left;
+    width: 50%;
+
+}
+.column:nth-child(2){
+    width: 50%;
+    float: left;
+}
+
+.row p {
+    display: inline-block;
+}
+.row p:hover {
+color: black;
+}
+
+/* ==============
+    Photo Overlay
+================*/
+
+.container-fluid {
+    margin-bottom: 40px;
+    width: auto;
+    position: relative;
+    padding: 0 30%;
+}
+
+.container-fluid img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    left: 30%;
+    top: 0;
+    background: black;
+    width: 40%;
+    height: 100%;
+    opacity: 1;
+}
+.overlay:hover {
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+.overlay-2 {
+    opacity: 0;
+    position: absolute;
+    top: 20%;
+    left: 229px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.overlay-2:hover {
+    opacity: 1;
+    transition: 1s;
+    color: white;
+    background: rgba(0, 0, 0, .4);
+    width: 300px;
+    height: 152px;
+}
+
+/*================
+    Video
+=================*/
+.column video {
+    width: 100%;
+    height: 300px;
+}
+
+/*============ 
+    @media
+=============*/
+@media screen and (max-width:600px){
+   body{
+    background-color: red;
+   } 
+}
